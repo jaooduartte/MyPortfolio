@@ -1,3 +1,5 @@
+document.addEventListener("DOMContentLoaded", function() {
+
 // ANIMAÇÃO DE DIGITAÇAO NO TEXTO h2
 function escrevendoLetra() {
     function ativaLetra(elemento) {
@@ -34,4 +36,9 @@ const navMenu = document.querySelector('header .navegacao-primaria')
 ativaMenu.addEventListener('click', ()=>{
     ativaMenu.classList.toggle('fa-x')
     navMenu.classList.toggle('ativado')
-})
+});
+
+// Chame as funções de animação de digitação
+escrevendoLetra();
+escrevendoLetraParagrafo();
+});
